@@ -116,5 +116,28 @@ public class MyBST {
         return node;
     }
 
+    /**
+     * leetcode 98
+     */
+
+    public boolean isValidBST(TreeNode root) {
+        return doCheck(root, Integer.MAX_VALUE, Integer.MIN_VALUE);
+    }
+    public boolean doCheck(TreeNode root, int max, int min) {
+        if (root == null) return false;
+
+        if (root.val < max && root.val > min) {
+            boolean checkLeft = true;
+            boolean checkRight = true;
+            if (root.left != null) {
+                checkLeft = doCheck(root.left, root.val, min);
+            }
+            if (root.right != null) {
+                checkRight = doCheck(root.right, max, root.val);
+            }
+            return checkLeft && checkRight;
+        }
+        return false;
+    }
 
 }
