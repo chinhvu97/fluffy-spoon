@@ -7,7 +7,7 @@ import java.util.Stack;
 public class SampleDFSWithStack
 {
     public static void main(String[] args) {
-        int[][] g = {   { 0, 1, 0, 0, 0, 0, 0}, 
+        int[][] g = {       { 0, 1, 0, 0, 0, 0, 0},
                             { 1, 0, 1, 1, 1, 0, 0},
                             { 0, 1, 0, 0, 0, 1, 0},
                             { 0, 1, 0, 0, 0, 1, 1},
