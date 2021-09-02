@@ -7,7 +7,6 @@ public class _200 {
 //        result.add(dinhDangXet);
         for (int v = 0; v < g.length; v++) {
             if (g[dinhDangXet][v] == '1' && !setDinhDaDuyet.contains(v)) {
-                g[]
                 setDinhDaDuyet.add(v);
 //                result.add(v);
                 runDFS(v, setDinhDaDuyet, g);

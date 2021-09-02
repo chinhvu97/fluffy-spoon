@@ -1,3 +1,5 @@
+package August;
+
 public class _520_Detect_Capital {
     public static boolean detectCapitalUse(String word) {
 

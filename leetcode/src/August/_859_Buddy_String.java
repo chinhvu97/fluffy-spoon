@@ -1,3 +1,5 @@
+package August;
+
 import java.util.*;
 
 public class _859_Buddy_String {

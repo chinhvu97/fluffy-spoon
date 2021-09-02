@@ -1,3 +1,5 @@
+package August;
+
 import java.util.Arrays;
 
 public class _821_Shortest_Distance {
